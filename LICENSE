@@ -1,51 +1,29 @@
-Claro! Aqui está um exemplo de código para gerar um license para o seu projeto no Github chamado NovaIA:
+Claro! Aqui está um exemplo de como você pode criar um arquivo de licença para o seu projeto no Github chamado NovaIA:
 
-```python
-# NovaIA License
+```
+MIT License
 
-import datetime
+Direitos autorais (c) <ano> <nome do autor>
 
-def gerar_license():
-    data_atual = datetime.datetime.now()
-    data_expiracao = data_atual + datetime.timedelta(days=365)
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e arquivos de documentação associados (o "Software"), para lidar
+no Software sem restrição, incluindo, sem limitação, os direitos
+usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
+cópias do Software e permitir que as pessoas a quem o Software é
+fornecido o mesmo, sujeito às seguintes condições:
 
-    license = f"""
-    *****************************************************************
-    *                                                               *
-    *                     LICENÇA DE USO - NovaIA                   *
-    *                                                               *
-    *****************************************************************
+O aviso de direitos autorais acima e este aviso de permissão devem ser
+incluído em todas as cópias ou partes substanciais do Software.
 
-    Esta licença é concedida gratuitamente para uso do código-fonte
-    gerado pela inteligência artificial NovaIA.
-
-    1. Você tem permissão para utilizar, copiar e distribuir os
-       arquivos gerados pelo projeto NovaIA para fins comerciais e
-       não comerciais.
-
-    2. Não é necessário atribuir créditos à NovaIA e nem aos seus
-       desenvolvedores ao utilizar o código gerado.
-
-    3. Você não pode modificar o código gerado pela NovaIA ou
-       reivindicar autoria sobre ele.
-
-    4. Esta licença expira em {data_expiracao.strftime("%d/%m/%Y")},
-       momento em que você deve renová-la ou entrar em contato com
-       os desenvolvedores da NovaIA para obter uma nova licença.
-
-    5. A NovaIA não se responsabiliza por quaisquer danos ou
-       consequências decorrentes do uso do código gerado.
-
-    *****************************************************************
-    """
-
-    return license
-
-# Exemplo de uso
-license = gerar_license()
-print(license)
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
+IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
+ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO. EM NENHUMA HIPÓTESE
+OS AUTORES OU PROPRIETÁRIOS DE DIREITOS DE AUTOR SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO,
+DANOS OU OUTRA RESPONSABILIDADE, SEJA EM AÇÃO DE CONTRATO, TORTA OU DE OUTRA FORMA,
+DECORRENTE DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS OFERTAS NO
+SOFTWARE.
 ```
 
-Este código irá gerar um arquivo de licença para o seu projeto NovaIA. Basta salvá-lo em um arquivo chamado `license.txt` ou `LICENSE.md` e adicionar ao repositório do seu projeto no Github.
+Lembre-se de substituir `<ano>` pelo ano atual e `<nome do autor>` pelo seu nome ou nome da organização responsável pelo projeto.
 
-Lembrando que este é apenas um exemplo de license e é importante consultar um advogado ou especialista em direitos autorais para garantir que a licença seja adequada às suas necessidades e ao seu projeto.
+Este exemplo usa a licença MIT, que é uma licença de código aberto permissiva amplamente aceita. No entanto, você pode escolher outra licença de acordo com as necessidades e requisitos do seu projeto.
