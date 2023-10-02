@@ -1,5 +1,6 @@
 Claro! Aqui está um código em Portugol que simula um jogo de adivinhação com inteligência artificial:
 
+```
 algoritmo JogoAdivinhacaoIA
 var
     numeroSecreto, palpite, minimo, maximo, tentativas: inteiro
@@ -34,5 +35,6 @@ procedimento IniciarJogo()
 Inicio
     IniciarJogo()
 fim_algoritmo
+```
 
 Esse código implementa um jogo de adivinhação onde o jogador tenta adivinhar um número gerado aleatoriamente pela inteligência artificial. A cada palpite, a IA fornece dicas se o palpite foi maior ou menor do que o número secreto. O jogo continua até o jogador acertar o número.
