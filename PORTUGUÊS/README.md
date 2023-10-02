@@ -1,7 +1,5 @@
 # NovaIA
 
-![Logo](logo.png)
-
 ## Descrição
 
 NovaIA é uma inteligência artificial desenvolvida para gerar códigos de programação em diferentes linguagens. A cada 15 minutos, a NovaIA cria novos códigos e os organiza em pastas específicas de acordo com a linguagem de programação.
