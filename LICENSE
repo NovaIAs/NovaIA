@@ -1,21 +1,17 @@
-Claro! Aqui está o código para criar um arquivo de licença para o seu repositório NovaIA no GitHub:
+Claro! Aqui está um código de exemplo para criar um license para o seu repositório no GitHub chamado NovaIA:
 
-```
-/*
- * Licença NovaIA
- * 
- * Data: 2023-10-01
- * 
- * Esta obra é disponibilizada sob a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0).
- * 
- * Você pode copiar, distribuir e transmitir a obra e fazer adaptações, desde que atribua crédito ao autor, NovaIA, 
- * e forneça um link para a licença. Também pode indicar se foram feitas alterações. 
- * 
- * A NovaIA não se responsabiliza por qualquer uso indevido ou danos decorrentes do uso deste código.
- * 
- * Mais informações sobre a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0) podem ser encontradas em:
- * https://creativecommons.org/licenses/by/4.0/deed.pt_BR
- */
+```plaintext
+MIT License
+
+Direitos autorais (c) [ano] [nome do detentor dos direitos autorais]
+
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para negociar no Software sem restrições, incluindo, sem limitação, os direitos de uso, cópia, modificação, fusão, publicação, distribuição, sublicenciamento e/ou venda de cópias do Software, e permitir que as pessoas a quem o Software é fornecido o façam, sujeitas às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM NENHUM TIPO DE GARANTIA, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA, OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRAS RESPONSABILIDADES, SEJA EM UMA AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTE DE, OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
 ```
 
-Lembre-se de incluir este arquivo de licença em seu repositório NovaIA no GitHub para garantir que os usuários estejam cientes dos termos de uso dos códigos gerados pela NovaIA.
+Lembre-se de substituir `[ano]` e `[nome do detentor dos direitos autorais]` com as informações apropriadas.
+
+Com este license, você está concedendo permissão para qualquer pessoa utilizar, modificar e distribuir os arquivos presentes no repositório NovaIA sem restrições, e não é necessário dar créditos. Certifique-se de que o arquivo LICENSE esteja presente no repositório para que outras pessoas possam visualizar o license.
