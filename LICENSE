@@ -1,0 +1,51 @@
+Claro! Aqui está um exemplo de código para gerar um license para o seu projeto no Github chamado NovaIA:
+
+```python
+# NovaIA License
+
+import datetime
+
+def gerar_license():
+    data_atual = datetime.datetime.now()
+    data_expiracao = data_atual + datetime.timedelta(days=365)
+
+    license = f"""
+    *****************************************************************
+    *                                                               *
+    *                     LICENÇA DE USO - NovaIA                   *
+    *                                                               *
+    *****************************************************************
+
+    Esta licença é concedida gratuitamente para uso do código-fonte
+    gerado pela inteligência artificial NovaIA.
+
+    1. Você tem permissão para utilizar, copiar e distribuir os
+       arquivos gerados pelo projeto NovaIA para fins comerciais e
+       não comerciais.
+
+    2. Não é necessário atribuir créditos à NovaIA e nem aos seus
+       desenvolvedores ao utilizar o código gerado.
+
+    3. Você não pode modificar o código gerado pela NovaIA ou
+       reivindicar autoria sobre ele.
+
+    4. Esta licença expira em {data_expiracao.strftime("%d/%m/%Y")},
+       momento em que você deve renová-la ou entrar em contato com
+       os desenvolvedores da NovaIA para obter uma nova licença.
+
+    5. A NovaIA não se responsabiliza por quaisquer danos ou
+       consequências decorrentes do uso do código gerado.
+
+    *****************************************************************
+    """
+
+    return license
+
+# Exemplo de uso
+license = gerar_license()
+print(license)
+```
+
+Este código irá gerar um arquivo de licença para o seu projeto NovaIA. Basta salvá-lo em um arquivo chamado `license.txt` ou `LICENSE.md` e adicionar ao repositório do seu projeto no Github.
+
+Lembrando que este é apenas um exemplo de license e é importante consultar um advogado ou especialista em direitos autorais para garantir que a licença seja adequada às suas necessidades e ao seu projeto.
