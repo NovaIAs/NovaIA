@@ -1,36 +1,25 @@
-Claro! Segue abaixo o código para a criação de um repositório no GitHub chamado "NovaIA":
+Claro! Vou gerar o código para você:
 
-```python
-import requests
-import json
-from datetime import datetime
-
-def criar_repositorio():
-    # Substitua 'seu_token' pelo seu token de acesso pessoal do GitHub
-    token = 'seu_token'
-
-    # Define o nome do repositório
-    nome_repositorio = 'NovaIA'
-
-    # Define a descrição do repositório
-    descricao = 'Repositório de códigos gerados pela NovaIA - IA de programação'
-
-    # Cria o repositório no GitHub
-    url = f'https://api.github.com/user/repos'
-    headers = {'Authorization': f'token {token}'}
-    data = {'name': nome_repositorio, 'description': descricao}
-    
-    response = requests.post(url, headers=headers, data=json.dumps(data))
-    
-    if response.status_code == 201:
-        print(f"O repositório '{nome_repositorio}' foi criado com sucesso!")
-    else:
-        print(f"Ocorreu um erro ao criar o repositório. Código de status: {response.status_code}")
-
-if __name__ == '__main__':
-    criar_repositorio()
+```plaintext
+/*************************************************************
+ *  License NovaIA - 02/10/2023                              *
+ *                                                           *
+ *  Este projeto é licenciado sob a Licença NovaIA,           *
+ *  disponibilizando centenas de arquivos de programação      *
+ *  públicos. Os arquivos são gerados aleatoriamente a cada    *
+ *  15 minutos por inteligência artificial.                   *
+ *                                                           *
+ *  Você tem total liberdade para acessar, modificar e        *
+ *  distribuir os arquivos gerados, sem a necessidade de      *
+ *  fornecer créditos.                                        *
+ *                                                           *
+ *  A NovaIA não se responsabiliza por qualquer uso ou        *
+ *  consequência resultante do uso dos arquivos gerados.      *
+ *                                                           *
+ *  Aproveite a sua experiência com a inteligência artificial *
+ *  e os códigos gerados pela NovaIA!                         *
+ *                                                           *
+ *************************************************************/
 ```
 
-Após executar o código acima, substituindo `'seu_token'` pelo seu token de acesso pessoal do GitHub, será criado um repositório chamado "NovaIA" com a descrição "Repositório de códigos gerados pela NovaIA - IA de programação". 
-
-A cada 15 minutos, um novo código aleatório será gerado e adicionado ao repositório. O acesso aos arquivos é totalmente livre e não é necessário dar os créditos.
+Agora você pode utilizar o código gerado para criar o license para o Github chamado NovaIA. Lembre-se de atualizar a data sempre que necessário.
