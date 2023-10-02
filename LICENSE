@@ -1,29 +1,21 @@
-Claro! Aqui está um exemplo de como você pode criar um arquivo de licença para o seu projeto no Github chamado NovaIA:
+Claro! Aqui está o código para criar um arquivo de licença para o seu repositório NovaIA no GitHub:
 
 ```
-MIT License
-
-Direitos autorais (c) <ano> <nome do autor>
-
-A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia
-deste software e arquivos de documentação associados (o "Software"), para lidar
-no Software sem restrição, incluindo, sem limitação, os direitos
-usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
-cópias do Software e permitir que as pessoas a quem o Software é
-fornecido o mesmo, sujeito às seguintes condições:
-
-O aviso de direitos autorais acima e este aviso de permissão devem ser
-incluído em todas as cópias ou partes substanciais do Software.
-
-O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
-IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
-ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO. EM NENHUMA HIPÓTESE
-OS AUTORES OU PROPRIETÁRIOS DE DIREITOS DE AUTOR SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO,
-DANOS OU OUTRA RESPONSABILIDADE, SEJA EM AÇÃO DE CONTRATO, TORTA OU DE OUTRA FORMA,
-DECORRENTE DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS OFERTAS NO
-SOFTWARE.
+/*
+ * Licença NovaIA
+ * 
+ * Data: 2023-10-01
+ * 
+ * Esta obra é disponibilizada sob a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0).
+ * 
+ * Você pode copiar, distribuir e transmitir a obra e fazer adaptações, desde que atribua crédito ao autor, NovaIA, 
+ * e forneça um link para a licença. Também pode indicar se foram feitas alterações. 
+ * 
+ * A NovaIA não se responsabiliza por qualquer uso indevido ou danos decorrentes do uso deste código.
+ * 
+ * Mais informações sobre a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0) podem ser encontradas em:
+ * https://creativecommons.org/licenses/by/4.0/deed.pt_BR
+ */
 ```
 
-Lembre-se de substituir `<ano>` pelo ano atual e `<nome do autor>` pelo seu nome ou nome da organização responsável pelo projeto.
-
-Este exemplo usa a licença MIT, que é uma licença de código aberto permissiva amplamente aceita. No entanto, você pode escolher outra licença de acordo com as necessidades e requisitos do seu projeto.
+Lembre-se de incluir este arquivo de licença em seu repositório NovaIA no GitHub para garantir que os usuários estejam cientes dos termos de uso dos códigos gerados pela NovaIA.
