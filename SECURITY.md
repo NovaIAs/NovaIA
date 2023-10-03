@@ -6,7 +6,8 @@ Nossa política de segurança se aplica à versão oficial do projeto NovaIA (0.
 
 | Versão | Suportada          |
 | ------- | ------------------ |
-| 0.5   | :white_check_mark: |
+| 0.6   | :white_check_mark: |
+| 0.5   | ❌ |
 
 ## Relatar uma Vulnerabilidade
 
