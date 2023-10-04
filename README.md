@@ -31,8 +31,8 @@ Este repositório é gerado automaticamente pela NovaIA e, portanto, não aceita
 
 Este repositório e os códigos contidos nele são fornecidos sem garantia de qualquer tipo, expressa ou implícita. Sinta-se à vontade para usar e modificar os códigos de acordo com suas necessidades, mas lembre-se de verificar se eles atendem aos requisitos de segurança e qualidade antes de usá-los em produção.
 
-## Contato
+## Criadores
 
-Dúvidas, sugestões ou feedbacks sobre a NovaIA podem ser enviados para [contato@novaia.com](mailto:contato@novaia.com). Ficaremos felizes em ajudar!
+Projeto foi desenvolvido por: Angelo Gabriel, Miriã Crispim, Alex ícaro e Julia Lopes
 
 Divirta-se explorando e experimentando os códigos gerados pela NovaIA!
