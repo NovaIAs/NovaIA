@@ -1,115 +1,57 @@
-Claro! Aqui está um exemplo de código HTML e CSS para criar uma página de boas-vindas bonita com o tema "Bem-vindo ao repositório NovaIA":
-
-```html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bem-vindo ao repositório NovaIA</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Bem-vindo ao repositório NovaIA!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      text-align: center;
+      color: #777;
+    }
+
+    .link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link a:hover {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Códigos</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h1>Bem-vindo ao repositório NovaIA!</h1>
-      <p>Aqui você encontrará uma variedade de códigos de programação gerados automaticamente pela inteligência artificial NovaIA a cada 15 minutos.</p>
-      <a href="https://github.com/NovaIAs/NovaIA" class="btn">Acesse o Repositório</a>
-    </section>
-  </main>
-  <footer>
-    <p>Todos os direitos reservados &copy; 2022 NovaIA</p>
-  </footer>
+  <div class="container">
+    <h1>Bem-vindo ao repositório NovaIA!</h1>
+    <p>Aqui você encontrará uma variedade de códigos de programação gerados automaticamente pela inteligência artificial NovaIA a cada 15 minutos.</p>
+    <div class="link">
+      <a href="https://github.com/NovaIAs/NovaIA">Link para o repositório</a>
+    </div>
+  </div>
 </body>
 </html>
-```
-
-E o código CSS (salve como "styles.css"):
-
-```css
-/* Reset de estilos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilos globais */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
-
-header {
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-main {
-  padding: 20px;
-}
-
-.hero {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-footer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-```
-
-Espero que goste! Se precisar de mais ajuda, é só pedir.
