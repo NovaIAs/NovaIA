@@ -1,38 +1,46 @@
-# NovaIA - Geração Automática de Códigos
+# NovaIA
 
-Bem-vindo ao repositório NovaIA! Aqui você encontrará uma variedade de códigos de programação gerados automaticamente pela inteligência artificial NovaIA a cada 15 minutos.
+![NovaIA](https://caminho/para/imagem/novaia.png)
 
-## Sobre o Projeto
-
-NovaIA é uma inteligência artificial desenvolvida para gerar códigos de programação em diferentes linguagens. A cada 15 minutos, um novo código é gerado e adicionado a este repositório. A principal finalidade dessa iniciativa é fornecer exemplos de código em diferentes linguagens de programação e servir como fonte de inspiração para desenvolvedores.
+Bem-vindo ao repositório NovaIA! Aqui você encontrará uma coleção de códigos de programação em português gerados pela NovaIA, uma inteligência artificial alimentada pelo ChatGPT. A cada 10 minutos, a NovaIA gera novos códigos para diferentes linguagens de programação e os organiza em pastas específicas.
 
 ## Estrutura do Repositório
 
-O repositório está organizado em diferentes pastas, cada uma representando uma linguagem de programação específica. Até o momento, as seguintes pastas estão disponíveis:
+O repositório está organizado da seguinte forma:
 
-- **Python**: Contém códigos em Python gerados pela NovaIA.
-- **Java**: Contém códigos em Java gerados pela NovaIA.
-- **JavaScript**: Contém códigos em JavaScript gerados pela NovaIA.
-- **C++**: Contém códigos em C++ gerados pela NovaIA.
-- **Ruby**: Contém códigos em Ruby gerados pela NovaIA.
-- **PHP**: Contém códigos em PHP gerados pela NovaIA.
+```
+.
+├── python
+│   ├── code1.py
+│   ├── code2.py
+│   └── ...
+├── java
+│   ├── code1.java
+│   ├── code2.java
+│   └── ...
+├── javascript
+│   ├── code1.js
+│   ├── code2.js
+│   └── ...
+└── ...
+```
 
-Cada pasta tem seu próprio conjunto de códigos gerados aleatoriamente, refletindo uma ampla gama de tópicos e técnicas de programação.
+Cada pasta corresponde a uma linguagem de programação específica, como Python, Java, JavaScript, entre outras. Dentro de cada pasta, você encontrará uma coleção de códigos gerados pela NovaIA.
 
 ## Como Utilizar
 
-Sinta-se à vontade para explorar as pastas e navegar pelos códigos gerados. Se você encontrar algo interessante ou útil, fique à vontade para utilizá-lo em seus próprios projetos. Lembre-se de que esses códigos são gerados aleatoriamente e podem não atender a todos os requisitos específicos, portanto, é importante revisá-los e ajustá-los conforme necessário.
+Você pode navegar pelas pastas para encontrar os códigos em cada linguagem de programação. Cada código está em um arquivo separado, com uma extensão correspondente à linguagem escolhida. Sinta-se à vontade para explorar, analisar e usar esses códigos em seus projetos.
 
-## Contribuindo
+## Contribuição
 
-Este repositório é gerado automaticamente pela NovaIA e, portanto, não aceita contribuições diretas. No entanto, se você tiver sugestões de melhoria ou novas funcionalidades para a NovaIA, sinta-se à vontade para compartilhá-las por meio dos canais apropriados.
+Como a NovaIA é uma inteligência artificial que gera códigos constantemente, novos códigos são adicionados a cada 10 minutos. No entanto, esse repositório é apenas para fins de referência e não permite contribuições externas.
 
 ## Licença
 
-Este repositório e os códigos contidos nele são fornecidos sem garantia de qualquer tipo, expressa ou implícita. Sinta-se à vontade para usar e modificar os códigos de acordo com suas necessidades, mas lembre-se de verificar se eles atendem aos requisitos de segurança e qualidade antes de usá-los em produção.
+Este repositório é licenciado sob a [MIT License](https://opensource.org/licenses/MIT). Sinta-se à vontade para usar, modificar e distribuir os códigos encontrados aqui de acordo com os termos da licença.
 
-## Criadores
+## Contato
 
-Projeto foi desenvolvido por: Angelo Gabriel, Miriã Crispim, Alex ícaro e Julia Lopes
+Se você tiver alguma dúvida, sugestão ou feedback sobre a NovaIA ou este repositório, sinta-se à vontade para entrar em contato conosco através do [e-mail](mailto:contato@novaia.com) ou do [site da NovaIA](https://www.novaia.com).
 
-Divirta-se explorando e experimentando os códigos gerados pela NovaIA!
+Agradecemos por utilizar a NovaIA!
