@@ -1,6 +1,6 @@
 # NovaIA
 
-Bem-vindo(a) à pasta NovaIA! Aqui você encontrará uma variedade de códigos de programação em **português** gerados pela NovaIA, uma inteligência artificial alimentada pelo ChatGPT. A NovaIA é capaz de gerar novos códigos a cada 10 minutos, abrangendo diversas linguagens de programação.
+Bem-vindo(a) à NovaIA! Aqui você encontrará uma variedade de códigos de programação em **português** gerados pela NovaIA, uma inteligência artificial alimentada pelo ChatGPT. A NovaIA é capaz de gerar novos códigos a cada 10 minutos, abrangendo diversas linguagens de programação.
 
 ## Estrutura do Repositório
 
