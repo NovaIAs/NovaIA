@@ -1,46 +1,30 @@
 # NovaIA
 
-![NovaIA](https://caminho/para/imagem/novaia.png)
-
-Bem-vindo ao repositório NovaIA! Aqui você encontrará uma coleção de códigos de programação em português gerados pela NovaIA, uma inteligência artificial alimentada pelo ChatGPT. A cada 10 minutos, a NovaIA gera novos códigos para diferentes linguagens de programação e os organiza em pastas específicas.
+Bem-vindo(a) à pasta NovaIA! Aqui você encontrará uma variedade de códigos de programação em **português** gerados pela NovaIA, uma inteligência artificial alimentada pelo ChatGPT. A NovaIA é capaz de gerar novos códigos a cada 10 minutos, abrangendo diversas linguagens de programação.
 
 ## Estrutura do Repositório
 
-O repositório está organizado da seguinte forma:
+O repositório está organizado em pastas, cada uma delas correspondendo a uma linguagem de programação específica. Abaixo, você encontrará uma lista das pastas principais:
 
-```
-.
-├── python
-│   ├── code1.py
-│   ├── code2.py
-│   └── ...
-├── java
-│   ├── code1.java
-│   ├── code2.java
-│   └── ...
-├── javascript
-│   ├── code1.js
-│   ├── code2.js
-│   └── ...
-└── ...
-```
-
-Cada pasta corresponde a uma linguagem de programação específica, como Python, Java, JavaScript, entre outras. Dentro de cada pasta, você encontrará uma coleção de códigos gerados pela NovaIA.
+- [Python](./python): Exemplos de código em Python.
+- [Java](./java): Exemplos de código em Java.
+- [JavaScript](./javascript): Exemplos de código em JavaScript.
+- [C++](./cpp): Exemplos de código em C++.
+- [Ruby](./ruby): Exemplos de código em Ruby.
+- [PHP](./php): Exemplos de código em PHP.
+- [HTML](./html): Exemplos de código em HTML.
+- [CSS](./css): Exemplos de código em CSS.
 
 ## Como Utilizar
 
-Você pode navegar pelas pastas para encontrar os códigos em cada linguagem de programação. Cada código está em um arquivo separado, com uma extensão correspondente à linguagem escolhida. Sinta-se à vontade para explorar, analisar e usar esses códigos em seus projetos.
+Dentro de cada pasta correspondente à linguagem de programação desejada, você encontrará diversos arquivos de código-fonte. Basta acessar a pasta referente à linguagem de seu interesse e explorar os exemplos disponíveis. Sinta-se à vontade para utilizar e adaptar os códigos para suas necessidades.
 
 ## Contribuição
 
-Como a NovaIA é uma inteligência artificial que gera códigos constantemente, novos códigos são adicionados a cada 10 minutos. No entanto, esse repositório é apenas para fins de referência e não permite contribuições externas.
+A NovaIA é uma inteligência artificial dedicada a gerar códigos de programação para a comunidade. Se você tem algum código interessante que gostaria de compartilhar, fique à vontade para contribuir com o repositório. Basta abrir uma [issue](https://github.com/seu-usuario/NovaIA/issues) ou enviar um [pull request](https://github.com/seu-usuario/NovaIA/pulls) com suas sugestões.
 
 ## Licença
 
-Este repositório é licenciado sob a [MIT License](https://opensource.org/licenses/MIT). Sinta-se à vontade para usar, modificar e distribuir os códigos encontrados aqui de acordo com os termos da licença.
+Este repositório é disponibilizado sob a licença [MIT](./LICENSE). Sinta-se à vontade para utilizar e adaptar os códigos de acordo com as diretrizes da licença.
 
-## Contato
-
-Se você tiver alguma dúvida, sugestão ou feedback sobre a NovaIA ou este repositório, sinta-se à vontade para entrar em contato conosco através do [e-mail](mailto:contato@novaia.com) ou do [site da NovaIA](https://www.novaia.com).
-
-Agradecemos por utilizar a NovaIA!
+Esperamos que você encontre os códigos gerados pela NovaIA úteis e inspiradores! Fique à vontade para explorar, aprender e contribuir com a comunidade de desenvolvimento de software.
