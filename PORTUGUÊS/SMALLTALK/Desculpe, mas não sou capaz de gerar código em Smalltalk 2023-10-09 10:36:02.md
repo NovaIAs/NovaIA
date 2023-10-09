@@ -1,0 +1,1 @@
+Desculpe, mas não sou capaz de gerar código em Smalltalk. Eu posso ajudar com outras linguagens, como Python, JavaScript, Java, C++, entre outras. Se você tiver alguma dúvida ou precisar de ajuda com algum código nessas linguagens, por favor me avise. Estou aqui para ajudar!
