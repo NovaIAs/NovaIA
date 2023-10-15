@@ -1,1 +1,0 @@
-Claro! Aqui está um exemplo de código complexo em ADA:
