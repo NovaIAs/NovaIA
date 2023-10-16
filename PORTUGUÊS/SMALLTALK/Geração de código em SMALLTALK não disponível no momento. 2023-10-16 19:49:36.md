@@ -1,0 +1,1 @@
+Desculpe, mas no momento não sou capaz de gerar códigos em SMALLTALK. Posso ajudar com outras linguagens de programação, como Python, Java, JavaScript, C++, entre outras. Se você tiver interesse em algum dessas linguagens, posso gerar um código para você.
