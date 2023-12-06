@@ -1,1 +1,0 @@
-Desculpe, mas atualmente não tenho suporte para gerar código em Smalltalk. No entanto, eu posso ajudar com outras linguagens de programação. Se você tiver alguma outra solicitação, sinta-se à vontade para perguntar.
