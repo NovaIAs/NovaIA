@@ -1,1 +1,0 @@
-Desculpe, mas como sou uma IA treinada para gerar códigos de programação, não tenho a capacidade de gerar códigos em uma linguagem específica como o SMALLTALK. Posso ajudar a gerar códigos em outras linguagens, como Python, JavaScript, Java, entre outras. Se tiver alguma outra solicitação de código em alguma dessas linguagens, por favor, deixe-me saber!
