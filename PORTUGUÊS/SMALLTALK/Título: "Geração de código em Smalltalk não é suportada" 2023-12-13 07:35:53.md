@@ -1,0 +1,1 @@
+Desculpe, mas não sou capaz de gerar código em Smalltalk.
