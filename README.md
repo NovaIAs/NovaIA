@@ -8,6 +8,6 @@ Este ecossistema em constante expansão é o auge da evolução da IA, refinando
 
 Explore cada recanto desse universo em mutação, onde a inovação e a descoberta se abraçam a cada linha de código. Seu próximo insight genial ou projeto revolucionário pode estar aguardando por você entre essas linhas. Seja bem-vindo ao NovaIA, onde o futuro da programação se desvela em um espetáculo magnífico de possibilidades infinitas!
 
-**A contagem de arquivos e linhas de código foi revisada em 15/12/2023. Dependendo da data em que você acessar, pode haver ainda mais informações empolgantes à sua espera!
+**A contagem de arquivos e linhas de código foi revisada em 15/12/2023. Dependendo da data em que você acessar, pode haver ainda mais informações empolgantes à sua espera!**
 
-Desenvolvido por: Angelo Gabriel, Miriã Rodrigues, Julia Lopes e Alex Ícaro**
+**Desenvolvido por: Angelo Gabriel, Miriã Rodrigues, Julia Lopes e Alex Ícaro**
