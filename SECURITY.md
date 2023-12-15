@@ -2,7 +2,7 @@
 
 ## Versões Suportadas
 
-Nossa política de segurança se aplica à versão oficial do projeto NovaIA (0.5) e está sendo suportada com atualizações de segurança.
+Nossa política de segurança se aplica à versão oficial do projeto NovaIA (0.8) e está sendo suportada com atualizações de segurança.
 
 | Versão | Suportada          |
 | ------- | ------------------ |
