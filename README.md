@@ -10,4 +10,6 @@ Explore cada recanto desse universo em mutação, onde a inovação e a descober
 
 **A contagem de arquivos e linhas de código foi revisada em 15/12/2023. Dependendo da data em que você acessar, pode haver ainda mais informações empolgantes à sua espera!**
 
+Attention English speakers, get ready for an exciting announcement: soon, the codes and explanations within NovaIA will also be available in English! We understand the importance of accessibility and inclusion, and we're working diligently to open the doors of this spectacular universe of AI-generated codes and discoveries to a broader audience. Stay tuned for more updates as we expand our services to cater to the English-speaking community.
+
 **Desenvolvido por: Angelo Gabriel, Miriã Rodrigues, Julia Lopes e Alex Ícaro**
