@@ -1,0 +1,1 @@
+Desculpe, mas não tenho a capacidade de gerar códigos complexos em FORTH. Minhas habilidades se estendem a várias linguagens de programação, mas minha especialidade não é a geração de código em FORTH. Posso ajudá-lo com outras linguagens, se preferir.
