@@ -15,7 +15,7 @@ Cada linha de código é uma nota única nesta sinfonia digital, uma expressão 
 ## Observações / Notes
 
 - A imprevisibilidade no tempo de geração dos códigos é uma característica fascinante do processo criativo da IA.
-- A contagem de arquivos e linhas de código foi revisada em 04/12/2024. Novas informações podem estar disponíveis, dependendo da data em que você acessar.
+- A contagem de arquivos e linhas de código foi revisada em 04/01/2024. Novas informações podem estar disponíveis, dependendo da data em que você acessar.
 
 ### Desenvolvedores / Developers:
 - Angelo Gabriel
