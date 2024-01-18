@@ -1,0 +1,112 @@
+PROC TEST FACTOR (X:INTEGER, Y:INTEGER)
+IS
+   IF X > Y THEN
+      RETURN X
+   ELSE
+      RETURN Y
+   FI
+OD;
+
+PROC TEST POWER (X:INTEGER, Y:INTEGER)
+IS
+   IF Y = 0 THEN
+      RETURN 1
+   ELSEIF Y = 1 THEN
+      RETURN X
+   ELSE
+      PROC RECURSIVE POW (X:INTEGER, Y:INTEGER)
+      IS
+         IF Y = 0 THEN
+            RETURN 1
+         ELSEIF Y = 1 THEN
+            RETURN X
+         ELSE
+            RETURN X*POW(X, Y - 1)
+         FI
+      OD;
+      IN POW (X, Y)
+   FI
+OD;
+
+PROC TEST GCD (A:INTEGER, B:INTEGER)
+IS
+   IF B = 0 THEN
+      RETURN A
+   ELSE
+      RETURN GCD(B, MOD(A, B))
+   FI
+OD;
+
+PROC TEST LCM (A:INTEGER, B:INTEGER)
+IS
+   RETURN A*B/GCD(A, B)
+OD;
+
+PROC TEST PRIME (N:INTEGER)
+IS
+   IF N <= 1 THEN
+      RETURN FALSE
+   ELSEIF N = 2 THEN
+      RETURN TRUE
+   ELSE
+      FOR I FROM 2 TO ROUND(SQRT(N))
+      DO
+         IF MOD(N, I) = 0 THEN
+            RETURN FALSE
+         FI
+      OD;
+      RETURN TRUE
+   FI
+OD;
+
+PROC TEST REVERSE (LIST:LIST)
+IS
+   IF LIST-NIL THEN
+      RETURN REVERSE(LIST-TAIL)-LIST-HEAD*LIST-TAIL
+   ELSE
+      RETURN LIST-NIL
+   FI
+OD;
+
+PROC TEST FIB (N:INTEGER)
+IS
+   IF N <= 1 THEN
+      RETURN N
+   ELSE
+      RETURN FIB(N - 1) + FIB(N - 2)
+   FI
+OD;
+
+PROC TEST PRINT (STRING:STRING)
+IS
+   OUTPUT STRING TO STD_OUTPUT FILE
+OD;
+
+PROC TEST MAIN ()
+IS
+   PRINT("MAX(10, 5) = ");
+   PRINT_INT(TEST_FACTOR(10, 5));
+
+   PRINT("\n2^5 = ");
+   PRINT_INT(TEST_POWER(2, 5));
+
+   PRINT("\nGCD(12, 18) = ");
+   PRINT_INT(TEST_GCD(12, 18));
+
+   PRINT("\nLCM(12, 18) = ");
+   PRINT_INT(TEST_LCM(12, 18));
+
+   PRINT("\nIs 7 prime? ");
+   PRINT_BOOL(TEST_PRIME(7));
+
+   PRINT("\nIs 10 prime? ");
+   PRINT_BOOL(TEST_PRIME(10));
+
+   PRINT("\nReverse(\'Hello World\') = ");
+   PRINT(TEST_REVERSE("Hello World"));
+
+   PRINT("\nFib(9) = ");
+   PRINT_INT(TEST_FIB(9));
+
+   PRINT("\n")
+OD.
