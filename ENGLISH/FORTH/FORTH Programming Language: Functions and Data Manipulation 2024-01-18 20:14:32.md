@@ -1,0 +1,22 @@
+```forth
+: VARIABLE-ASSIGNMENT ( value -- ) VARIABLE @ = ;
+: IF-STATEMENT ( condition -- value )
+    IF IMMEDIATE >R OVER THEN ;
+: WHILE-LOOP ( condition -- )
+    WHILE TRUE BEGIN
+        IF IMMEDIATE >R OVER THEN
+        REPEAT ;
+: FOR-LOOP ( start-value end-value -- )
+    BEGIN DUP VARIABLE-ASSIGNMENT OVER > WHILE
+        [ SWAP VARIABLE-ASSIGNMENT ] REPEAT DROP ;
+: DATA-SORT ( list -- )
+    BEGIN DUP WHILE [ OVER @ OVER < IF SWAP THEN ]
+    REPEAT DROP ;
+: DATA-SEARCH ( list value -- )
+    BEGIN DUP WHILE [ OVER = IF LEAVE THEN ] REPEAT DROP
+    IF OVER THEN ;
+: DATA-DELETE ( list value -- )
+    BEGIN DUP WHILE [ OVER = IF OVER OVER SWAP SWAP ! THEN ] REPEAT DROP ;
+: DATA-INSERT ( list value -- )
+    BEGIN DUP WHILE [ OVER < IF LEAVE THEN ] REPEAT OVER SWAP ! ;
+```
