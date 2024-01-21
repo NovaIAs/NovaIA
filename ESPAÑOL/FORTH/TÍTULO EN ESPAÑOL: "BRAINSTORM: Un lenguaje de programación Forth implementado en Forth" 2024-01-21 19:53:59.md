@@ -1,0 +1,217 @@
+```forth
+: PALABRA ( -- N -- )
+  CREATE-WORD
+  HERE @
+  CELL+
+  NIL
+;
+
+: DEFINIR ( VOCABULARY -- )
+  DUP @DUP @ 1+ SWAP CELLS OVER - 1+ ALLOT
+  DUP @DUP @ 1+ SWAP 2DROP CELLS OVER + SWAP
+  @ . .
+;
+
+: ENTRADA ( -- )
+  SWAP 1- SWAP
+  DUP 32 > IF
+    DROP
+    2DUP LT IF 1+ THEN
+    SWAP DUP 127 > IF DROP THEN
+  THEN
+  PAD PAD
+  .
+;
+
+: DEPÓSITO ( -- ADDR )
+  @
+;
+
+: RETIRO ( ADDR -- )
+  CELL+
+;
+
+: SÍ ( BOOLEAN -- )
+  [IF] INVERT IF
+;
+
+: IMPRIMIR ( ADDR -- )
+  @ BL PAD
+;
+
+: TEXTO? ( ADDR -- BOOLEAN )
+  DUP 32 = OR
+  DUP 127 = OR
+;
+
+: BUSCAR ( VOCABULARY NAME? -- ADDR )
+  2DUP $
+  DUP @ @ @ OVER OVER @ =
+  OF IF
+    DUP @DUP @ OVER OVER @ @ =
+    OF IF OVER THEN
+  THEN
+  THEN
+;
+
+: PALABRA? ( VOCABULARY NAME? -- BOOLEAN )
+  2DUP $
+  DUP @ @ @ OVER OVER @ =
+  OF
+;
+
+: COMPILAR ( VOCABULARY NAME? 0S -- )
+  DUP @ @ @ @ >CODE IF
+    DUP @DUP @ OVER OVER @ @ =
+    OF IF
+      SWAP 2DUP 2OVER @ @ @ >CODE NOT
+      OF IF
+        2DROP RETI
+        PAD CREATE-WORD
+        2DUP SWAP 2DUP SWAP
+        @+ 1+ SWAP EXECUTE
+        @+ 1+ DROP
+      THEN
+    THEN
+    THEN
+    THEN
+  COMPILATION-ONLY
+;
+
+: INTERPRETAR ( VOCABULARY NAME? -- )
+  BUSCAR IF
+    DUP @DUP @ @ @ >CODE IF
+      DUP @DUP @ OVER OVER @ @ =
+      OF IF
+        SWAP 2DUP 2OVER @ @ @ >CODE NOT
+        OF IF
+          2DROP RETI
+          2DUP SWAP 2DUP SWAP
+          @+ 1+ SWAP EXECUTE
+          @+ 1+ DROP
+        THEN
+      THEN
+      THEN
+      THEN
+    EXECUTE
+  ELSE
+    PAD 0
+  THEN
+;
+
+: PREFIJO ( VOCABULARY NAME? -- )
+  2DUP $
+  DUP @ @ @ @ >PREFIJO IF
+    DUP @DUP @ OVER OVER @ @ =
+    OF IF
+      PAD CREATE-WORD
+      2DUP SWAP 2DUP SWAP
+      @+ 1+ SWAP EXECUTE
+      @+ 1+ DROP
+    THEN
+    THEN
+    THEN
+  COMPILATION-ONLY
+;
+
+
+: EJECUTAR" " ( -- )
+  4 PAD CREATE-WORD
+  "." EXECUTE CR
+;
+
+: MEMORIA ( -- )
+  " MEMORIA " EXECUTAR" "
+  HERE BL . 10 PAD
+  CELL+ BL . 10 PAD
+  HERE - BL . CR
+;
+
+: PALABRAS ( VOCABULARY -- )
+  DUP @ >R
+  DUP @WHILE
+    DUP @DROP
+    DUP @SWAP
+    DUP @ @ .
+    2DUP SWAP 2OVER @ @ =
+    OF IF
+      " --> " EXECUTAR" "
+      PAD BL BL PAD
+    THEN
+    BL BL
+    @+
+  REPEAT
+  DROP
+  R> R@
+;
+
+: VOCABULARIOS ( -- )
+  " VOCABULARIOS " EXECUTAR" "
+  PALABRAS VOCABULARY
+;
+
+: BUSCA ( VOCABULARY NAME? -- )
+  BUSCAR
+  SÍ IF
+    @ .
+  ELSE
+    "" PAD
+  THEN
+  CR
+;
+
+: CREAR ( VOCABULARY NAME? -- )
+  PAD CREATE-VOCABULARY
+;
+
+: ELIMINAR ( VOCABULARY NAME? -- )
+  BUSCAR
+  SÍ IF
+    PAD DELETE-VOCABULARY
+  ELSE
+    "" PAD
+  THEN
+  CR
+;
+
+: DESAPLICAR ( -- )
+  PAD RESET-VOCABULARY
+;
+
+: APLICAR ( VOCABULARY NAME? -- )
+  BUSCAR
+  SÍ IF
+    PAD USE-VOCABULARY
+  ELSE
+    "" PAD
+  THEN
+  CR
+;
+
+: INTERPRETACIÓN ( -- )
+  PAD INTERPRETATION-MODE
+;
+
+: COMPILACIÓN ( -- )
+  PAD COMPILATION-MODE
+;
+
+
+: MAIN ( -- )
+  DUP " INTERP " = IF
+    INTERPRETACIÓN
+    DUP @ PALABRAS
+  ELSE
+    COMPILACIÓN
+    DUP @ PALABRAS
+    DUP @BUSCAR IF
+      " BRAINSTORM " PAD @ CR
+    ELSE
+      " BRAINSTORM " PAD ." "
+    THEN
+  THEN
+  ." " VOCABULARIOS
+;
+
+MAIN
+```
