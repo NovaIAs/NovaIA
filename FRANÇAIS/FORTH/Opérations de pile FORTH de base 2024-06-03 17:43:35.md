@@ -1,0 +1,31 @@
+```forth
+: cdup ( a b -- b a b ) dup >r rot r> ;
+: drop ( n -- ) >r 2drop ;
+: 2drop ( n n -- ) r> drop ;
+: over ( n a -- n a a ) 2dup >r rot r> ;
+: tuck ( n a n b -- n b a ) cdup drop >r rot r> ;
+: rot ( n a b -- n b a ) over 2drop ;
+: swap ( n a b -- n b a ) rot over ;
+: nip ( n a b -- n b ) over drop ;
+: fill ( a n char -- ) begin 0 while >r emit loop drop ;
+: negate ( n -- n ) 0> - ;
+: -rot ( n a b c -- n b a c ) twice rot ;
+: 2* ( n -- m ) lshift ;
+: 2/ ( n -- m ) rshift ;
+: 2mod ( n -- m ) rshift and ;
+: divmod ( n d -- m q ) 2/ tuck mod swap ;
+: shorten ( addr1 addr2 n -- addr2 n ) ( -- n ) 1- begin dup 0> while c! shorten loop drop ;
+: find ( addr1 addr2 char -- n u ) ( -- u ) begin dup addr2 > while addr1 > over ?= if drop 0 exit else 2+ shorten repeat ;
+: string ( n char -- addr ) begin-string addr2 , string loop nip ;
+: store-string ( char -- ) begin 0= until find >r c! ;
+: display-char ( char -- ) emit ;
+: display-string ( addr -- ) begin dup addr2 > while display-char 2+ shorten repeat ;
+: display-int ( n -- ) begin pick >= 10 if display-int again else display-char then ;
+: display-addr ( addr -- ) display-int display-string ;
+: display-stack-item ( addr -- ) 0= if display-char else display-int then ;
+: display-stack ( n -- ) begin pick display-stack-item 2+ shorten repeat ;
+: display-nl ( -- ) cr emit ;
+: display ( n -- ) display-stack display-nl ;
+: execute ( addr -- ) ( -- ) begin @ if execute again then drop ;
+: doloop ( addr -- ) execute until ;
+```
