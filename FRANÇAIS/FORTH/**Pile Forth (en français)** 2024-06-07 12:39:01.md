@@ -1,0 +1,187 @@
+**Pile de Forth (en français)**
+
+```forth
+\ CRÉE LE VOCABULAIRE 'PILE'
+: PILE ( n -- )
+  DUP 53 + LOAD   \ CHARGE L'ADRESSE DE R53
+  ROT DROP        \ PLACE 'R53' SUR LA PILE
+  ROT OVER + @    \ ADDITIONNE LA TAILLE DE LA PILE
+  ROT SWAP - @    \ CHARGE LE POINTEUR DE PILE
+  SWAP DROP       \ STOCK LE POINTEUR DE PILE SUR R53
+;
+
+: ADRESSE ( a -- adr )
+  PILE ;
+
+\ AFFICHE L'ADRESSE OU LA CHAÎNE SUR LA PILE
+: .A ( -- )
+  HERE ADRESSE . CR   \ AFFICHE L'ADRESSE
+;
+
+\ AFFICHE LE NOM OU LA CHAÎNE SUR LA PILE
+: .N ( -- )
+  NIP . CR            \ AFFICHE LE NOM
+;
+
+\ REÇOIT UN CARACTÈRE SUR LA LIGNE DE COMMANDES
+: CAR ( char -- )
+  BLANKS ZEROTERM WAIT KEY DUP EMIT CR
+;
+
+\ REÇOIT UNE CHAÎNE SUR LA LIGNE DE COMMANDES
+: CHAÎNE ( word -- )
+  ALLOCATE BUFSIZE I STACKNAME
+  BEGIN DUP CHAR
+    KEY CR DO
+    KEY CR WHILE NIP
+  REPEAT
+  TERMINATED? PUT
+  DROP ;
+
+\ DÉFINI UN NOM POUR LE MOT SUIVANT
+: DÉFINI ( char -- )
+  ROT CREATE
+;
+
+\ DEFINI UN MOT AVEC DES POSTFIXES
+: DÉFINI @ ( mon mot -- )
+  ROT SWAP VARIABLE
+  CHAR ! @
+;
+
+\ CRÉE UN MOT AVEC DES PRÉFIXES
+: DÉFINI # ( le mot -- )
+  DUP ADDR 93 C!
+;
+
+\ CRÉE UNE VARIABLE AVEC UN NOM ET UNE TAILLE
+: VARIABLE ( mon mot taille -- )
+  ROT ALLOCATE VARIABLE
+  CHAR ! @
+;
+
+\ CRÉE UN MOT ÉQUIVALENT À UN AUTRE
+: ÉQUI ( mon équivalent -- )
+  ROT CREATE ADDR OVER ADDR @ !
+;
+
+\ COMPTE LE NOMBRE DE MOTS DANS UN VOCABULAIRE
+: NOMBRE ( -- words )
+  HERE (HERE) - @ .
+;
+
+\ COMPTE LE NOMBRE DE CARACTÈRES DANS UNE CHAÎNE
+: LONGUEUR ( -- words )
+  DUP @0 LONG 1+ .
+;
+
+\ COMPTE LE NOMBRE DE MOTS DANS UN VOCABULAIRE
+: RECHERCHE ( word -- addr )
+  HERE (HERE) -
+  BEGIN CHAR =IF
+    NIP + HERE 1+ CHAR @
+    HERE 2+ @ @ NIP
+  THEN
+  1+
+  LOOP
+  -1
+;
+
+\ COMPARE DEUX CARACTÈRES
+: ÉGAL ( a b -- flag )
+  DUP SWAP =
+;
+
+\ MBF recherche mot brouillon
+: MBF ( word -- word )
+  HERE RECHERCHE OVER
+  BEGIN HERE 2+ @ >WHILE
+    HERE 1+ @ +
+    HERE 2+ @ @ =IF
+      NIP NIP LEAVE
+    THEN
+  REPEAT
+  DROP 0
+;
+
+\ ADDR recherche mot brouillon (la version de Dave)
+: ADDR ( word -- addr )
+  HERE (HERE) -
+  BEGIN CHAR =IF
+    NIP + 'CHAR HERE 1+ @
+    HERE 'CHAR 2+ @ @
+  THEN
+  1+
+  LOOP
+  -1
+;
+
+\ AFFICHE LE NOM DU VOCABULAIRE CURENT
+: .V ( -- )
+  HERE NAME . CR
+;
+
+\ CHANGE LE VOCABULAIRE CURENT
+: UTILISE ( voc -- )
+  DUP @ ( voc) SWAP
+  HERE @ HERE @
+  SWAP !
+;
+
+\ CHANGE LE VOCABULAIRE CURENT (2e version)
+: UTILISE # ( voc -- )
+  DUP @ ( voc) SWAP
+  HERE @ HERE @ SWAP !
+;
+
+\ QUITTE LE VOCABULAIRE CURENT
+: QUITTE ( -- )
+  HERE @ HERE @ HERE @
+  SWAP ! SWAP RELEAVE
+;
+
+\ CRÉE UN VOCABULAIRE
+: CRÉE ( nom -- )
+  DUP 300 ALLOT
+  DUP 500 ALLOT
+  DUP HERE @ HERE @
+  SWAP !
+  HERE NAME !
+;
+
+\ CRÉE UN VOCABULAIRE FILS (Mot Brouillon)
+: CRÉE MBF ( mot brouillon nom -- )
+  DUP ADDR CREATE HERE @ !
+  DUP 500 ALLOT
+  DUP HERE @ HERE @
+  SWAP !
+  HERE NAME !
+;
+
+\ EFFACE UN VOCABULAIRE
+: EFFACE ( nom -- )
+  DUP @ HERE @ HERE @
+  SWAP !
+  HERE NAME !
+;
+
+\ CRÉE UN VOCABULAIRE ET SON MOT BROUILLON ASSOCIE
+: CRÉE MBF ( nom -- )
+  CREATE HERE @ !
+  HERE NAME !
+  BEGIN HERE ADDR MBF HERE CREATE
+    HERE @ !
+    HERE NAME !
+  REPEAT
+;
+
+\ ACCÈDE AU MOT BROUILLON D'UN VOCABULAIRE
+: MBF ( voc -- )
+  DUP @ 2000 +
+;
+
+\ AFFICHE LE NOM DU MOT BROUILLON D'UN VOCABULAIRE
+: .MBF ( voc -- )
+  DUP MBF NAME . CR
+;
+```
